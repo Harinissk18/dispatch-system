@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dispatch Risk Board</title>
 
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Same-Day Dispatch Risk Board</h1>
+
+    <div class="dashboard">
+        <div class="card">
+            <h3>Total Orders</h3>
+            <p id="totalOrders">0</p>
+        </div>
+
+        <div class="card">
+            <h3>High Risk</h3>
+            <p id="highRisk">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Dispatched</h3>
+            <p id="dispatched">0</p>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Time Left</th>
+                <th>Risk</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="orderTable">
+        </tbody>
+    </table>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
